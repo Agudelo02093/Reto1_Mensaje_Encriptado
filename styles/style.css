@@ -20,6 +20,9 @@ body {
     box-sizing: border-box;
     background-color: var(--color-background);
     color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main {
@@ -73,7 +76,7 @@ textarea::placeholder {
     font-size: 1rem;
     border-radius: 20px;
     cursor: pointer;
-    margin: 1% 1%;
+    margin: 1% 1% 1%;
 }
 
 .buttonsEncripters_encripter {
@@ -170,8 +173,34 @@ textarea::placeholder {
     z-index: 1000;
 }
 
+footer {
+    background-color: #87a6cc;
+    color: #fff;
+    height: 4vh;
+    margin: 0;
+    padding: 0.2% 0;
+}
+
+footer p {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: 300;
+    padding: 0.3% 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
 
 @media (max-width: 768px) {
+
+    body {
+        height: 100vh;
+    }
     
     main {
         flex-direction: column;
@@ -233,6 +262,10 @@ textarea::placeholder {
     .copyAlert {
         bottom: 30px;
         right: 10px;
+    }
+
+    footer {
+        margin-top: 250px;
     }
 
 }
